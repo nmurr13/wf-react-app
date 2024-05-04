@@ -12,7 +12,7 @@ const Concerts = (props) => {
             {allConcerts.map((concert, i) => <Concert concert={concert} 
             key={i}/>)}
             
-         <Form action="concerts/create" method="post">
+         <Form action="/create" method="post">
                 <label htmlFor="lineup">
                     <input type="text" name="lineup" id="lineup" placeholder="lineup"/>
                 </label>

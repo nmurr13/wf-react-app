@@ -42,7 +42,7 @@ export const updateAction = async ({request, params}) => {
 
     }
 
-    await fetch(`${URL}concerts/${id}`, {
+    await fetch(`concerts/${id}`, {
         method: "PUT",
         headers: {
             "Content-Type": "application/json"
