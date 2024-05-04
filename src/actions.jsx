@@ -41,15 +41,15 @@ export const updateAction = async ({request, params}) => {
         price: formData.get("price"),
 
     }
-
-    await fetch(`concerts/${id}`, {
+console.log("i am here")
+    await fetch(`${URL}concerts/${id}`, {
         method: "PUT",
         headers: {
             "Content-Type": "application/json"
         },
         body: JSON.stringify(updatedConcert)
     })
-    return redirect(`/concerts/${id}`)
+    return redirect(`/concerts`)
 };
 
 // Delete Action
