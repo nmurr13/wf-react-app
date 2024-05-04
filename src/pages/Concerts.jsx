@@ -7,7 +7,6 @@ const Concerts = (props) => {
 
     return (
         <>
-        
         <h1>Shows</h1>
             <hr />
             {allConcerts.map((concert, i) => <Concert concert={concert} 

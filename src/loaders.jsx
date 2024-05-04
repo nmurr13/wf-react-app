@@ -2,8 +2,7 @@
 const URL = import.meta.env.VITE_BASE_URL
 console.log(URL)
 
-// Index Loader
-export const indexLoader = async () => {
+export const concertLoader = async () => {
     const response = await fetch(`${URL}concerts`)
     const allConcerts = await response.json()
     return allConcerts
