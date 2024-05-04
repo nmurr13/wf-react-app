@@ -7,7 +7,7 @@ const Show = () => {
         <>
         <div>
             <h1>{aConcert.lineup}</h1>
-                <h2>{aConcert.flyerUrl}</h2>
+            <img src={aConcert.flyerUrl} alt="flyer"/>
                 <h2>{aConcert.date}</h2>
                 <h2>{aConcert.venue}</h2>
                 <h2>{aConcert.price}</h2>
@@ -26,7 +26,7 @@ const Show = () => {
                     <input type="text" name="venue" id="venue" defaultValue={aConcert.venue}/>
                 </label>
                 <label htmlFor="price">
-                    <input type="text" name="price" id="price" placeholder={aConcert.price}/>
+                    <input type="text" name="price" id="price" defaultValue={aConcert.price}/>
                 </label>
                 <hr />
                 <button type="submit">Update Show</button>
